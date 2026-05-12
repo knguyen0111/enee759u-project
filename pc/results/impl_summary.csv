@@ -1,0 +1,4 @@
+label,clock_ns,dsp,lut,ff,bram,wns,achieved_ns,fmax_mhz,timing_met
+case_02_pipeline_only,5.0,28,518,1186,0,,,,UNKNOWN
+case_13_clk1ns,1.0,45,204,1546,0,,,,UNKNOWN
+case_18_iterative_ap_2ns,2.0,1,66,139,0,,,,UNKNOWN

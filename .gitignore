@@ -1,16 +1,52 @@
-#macOS
+# ── macOS ─────────────────────────────────────────────────────────────────
 .DS_Store
 
-# Compiled binaries
-C/fixed/fir
-C/float/fir
-C/HLS/fir
+# Compiled binaries (Mac)
+mac/C/fixed/fir
+mac/C/fixed/fir1
+mac/C/float/fir
+mac/C/HLS/sim
 
 # Generated float reference files
-C/float/h.txt
-C/float/in.txt
-C/float/out.txt
-C/float/expected.txt
+mac/C/float/h.txt
+mac/C/float/in.txt
+mac/C/float/out.txt
+mac/C/float/expected.txt
 
 # RTL simulation output
-rtl-out/
+mac/rtl-out/
+
+# ── Windows / Vitis / Vivado ───────────────────────────────────────────────
+# IDE workspace
+pc/_ide/
+
+# Vivado session files
+pc/vivado.jou
+pc/vivado.log
+
+# Tool runtime files
+pc/dfx_runtime.txt
+pc/direct
+
+# Initial prototype work dirs (superseded by sweep/)
+pc/basic/
+pc/fir/
+
+# Per-case HLS generated output
+# Keep fir.cpp and hls_config.cfg, ignore everything else
+pc/sweep/dfx_runtime.txt
+pc/sweep/*/hls/
+pc/sweep/*/logs/
+pc/sweep/*/reports/
+pc/sweep/*/compile_commands.json
+pc/sweep/*/vitis-comp.json
+pc/sweep/**/.cache/
+pc/sweep/**/*.hlscompile_summary
+pc/sweep/**/*.hlsrun_csim_summary
+
+# Vivado implementation projects (large, regeneratable)
+pc/results/vivado_*/
+pc/results/*.rpt
+pc/results/sweep_run.log
+pc/results/basic_run.log
+pc/results/basic_result.csv
