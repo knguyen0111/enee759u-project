@@ -1,1 +1,16 @@
+#macOS
+.DS_Store
 
+# Compiled binaries
+C/fixed/fir
+C/float/fir
+C/HLS/fir
+
+# Generated float reference files
+C/float/h.txt
+C/float/in.txt
+C/float/out.txt
+C/float/expected.txt
+
+# RTL simulation output
+rtl-out/
